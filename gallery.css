@@ -1,0 +1,48 @@
+body {
+  background-color: #9c9898;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery {
+  width: 80%;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.image {
+  transition: transform 0.3s ease-in-out;
+}
+
+.image img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.image:hover img {
+  transform: scale(1.8);
+  position:static;
+}
+
+.gallery:hover {
+  padding: 20px;
+  border-radius: 15px;
+}
+
+
+.gallery:hover .image:not(:hover) img {
+  filter: blur(5px);
+}
+
+.image:hover{
+  z-index: 10;
+}
