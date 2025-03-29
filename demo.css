@@ -1,0 +1,35 @@
+.video1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #b7b5b5; 
+}
+
+
+video {
+  width: 350px;
+  height: 600px;
+  border-radius: 20px; 
+  box-shadow: 0px 8px 16px rgba(23, 21, 21, 0.3); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  outline: none;
+}
+
+
+video:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.5); 
+}
+
+video:not([src]) {
+  background: linear-gradient(90deg, #444, #666, #444);
+  background-size: 400% 400%;
+  animation: loading 2.4s infinite linear;
+}
+
+@keyframes loading {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
