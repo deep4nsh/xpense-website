@@ -122,6 +122,26 @@
       </div>
   </div>
 </div>
+<br><br><br>
+   <div class="video1">
+      <video id="video" src="images/app vid.mp4" controls></video>
+   </div>
+
+   <audio id="audio1" src="images/audio.mp3" autoplay loop></audio>
+
+  <script>
+     
+     let video = document.getElementById("video");
+     let audio = document.getElementById("audio1");
+
+     video.onplay  = () => audio.play();
+     video.onpause = () => audio.pause();
+     video.onseeking = () => audio.currentTime = video.currentTime;
+     
+  </script>
+</body>
+</html>
+
 
 
 </body>
