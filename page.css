@@ -45,6 +45,10 @@ h1, h2, h3 {
   font-weight: bold;
 }
 
+.header ul li a:hover {
+  color: #007BFF;
+}
+
 .buttons{
   display:flex;
   gap:10px;
@@ -257,7 +261,7 @@ h1, h2, h3 {
 
 .review {
   text-align: center;
-  background-color:rgb(255, 255, 255);
+  background-color:rgb(161, 156, 156);
   padding: 50px 20px;
 }
 
@@ -274,7 +278,7 @@ h1, h2, h3 {
 }
 
 .review-card {
-  background-color: #a6a6a6;;
+  background-color: #fffdfd;;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(71, 71, 71, 0.1);
@@ -289,7 +293,7 @@ h1, h2, h3 {
 
 .review-card h3 {
   margin-top: 10px;
-  color: white;
+  color: rgb(124, 122, 122);
 }
 
 .video1 {

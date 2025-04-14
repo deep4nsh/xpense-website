@@ -27,6 +27,9 @@ body {
   z-index: 1000;
   font-family: 'Poppins';
 }
+.header ul li a:hover {
+  color: #007BFF;
+}
 
 .buttons{
   display:flex;

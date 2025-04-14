@@ -1,105 +1,4 @@
-/* 
-.header {
-  height: 50px;
-  width: 100%;
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  
-  position: fixed; 
-  top: 0;
-  left: 0;
-  z-index: 1000;
-}
 
-.header ul {
-  list-style: none;
-  display: flex;
-  margin-right: 50px;
-  gap: 20px;
-
-}
-
-.header ul li {
-  display: inline;
-}
-
-.header ul li a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-
-.start {
-  background-image:url('images/support2.jpg');
-  color:white;
-  height:550px;
-  width:100%;
-  background-size: cover;
-  background-position: center;
-  padding-top: 100px;
-  text-align: center;
-}
-
-.start h1{
-  padding-left:250px; 
-  padding-top: 200px;
-  font-size: 45px;
-}
-
-.start p{
-  padding-left:250px;
-  padding-top: 5px;
-  font-size: 18px;
-}
-
-form {
-  padding-left: 20px;
-  padding-top:20px;
-  font-size: 16px;
-}
-
-input {
-  width: 25%;
-  height:25px;
-  padding:10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
-}
-
-.Question{
-  height:100px;
-  width:50%;
-  font-size:16px;
-}
-
-input:focus, textarea:focus {
-  border-color: #007bff;
-  outline: none;
-}
-
-button {
-  background-color: #007bff;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-.button{
-  padding-left: 250px;
-}  */
-
-/* Reset some default styles */
 * {
   margin: 0;
   padding: 0;
@@ -131,6 +30,7 @@ body {
   left: 0;
   z-index: 1000;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'poppins';
 }
 
 .header ul {
@@ -150,6 +50,31 @@ body {
   color: #007BFF;
 }
 
+.buttons{
+  display:flex;
+  gap:10px;
+  margin-left: 20px;
+}
+
+.buttons button {
+  height:30px;
+  width : 80px;
+  overflow: hidden;
+  border: none;
+  background-color:#090909;
+  color: white;
+  cursor: pointer;
+  border-radius: 15px;
+  font-family: 'poppins';
+  background-color: #090909;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.buttons button:hover {
+  background-color: #fffefe;
+  color:black;
+}
+
 /* Hero section */
 .start {
   background-image: url('images/support2.jpg');
@@ -162,19 +87,22 @@ body {
   text-align: center;
   color: white;
   padding: 40px;
+  font-family: 'poppins';
+  padding-top: 0;
 }
 
 .start h1 {
   font-size: 48px;
   margin-bottom: 20px;
+  font-family: 'poppins';
 }
 
 .start p {
   font-size: 18px;
   line-height: 1.6;
+  font-family: 'poppins';
 }
 
-/* Contact form */
 form {
   background-color: white;
   max-width: 600px;
@@ -182,6 +110,7 @@ form {
   padding: 30px 40px;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  font-family: 'poppins';
 }
 
 form label {
@@ -199,20 +128,19 @@ form textarea {
   border: 1px solid #ccc;
   border-radius: 8px;
   font-size: 15px;
+  font-family: 'poppins';
 }
 
 form textarea {
   height: 120px;
   resize: vertical;
 }
-
-/* Submit button */
 .button {
   text-align: center;
 }
 
 .button button {
-  background-color: #007BFF;
+  background-color: #000000;
   color: white;
   border: none;
   padding: 10px 30px;
@@ -223,5 +151,5 @@ form textarea {
 }
 
 .button button:hover {
-  background-color: #0056b3;
+  background-color: #4d4f51;
 }
