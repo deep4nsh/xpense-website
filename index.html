@@ -10,9 +10,9 @@
   <nav class="header">
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="demo.html">Demo</a></li>
+      <li><a href="#video-section">Demo</a></li>
       <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="support.html">Contact Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
     </ul>
     <div class="buttons">
       <button>Log In</button>
@@ -123,11 +123,11 @@
   </div>
 </div>
 <br><br><br>
-   <div class="video1">
+   <div class="video1" id="video-section">
       <video id="video" src="images/app vid.mp4" controls></video>
    </div>
 
-   <audio id="audio1" src="images/audio.mp3" autoplay loop></audio>
+   <audio id="audio1" src="images/audio.mp3" loop></audio>
 
   <script>
      
@@ -137,8 +137,19 @@
      video.onplay  = () => audio.play();
      video.onpause = () => audio.pause();
      video.onseeking = () => audio.currentTime = video.currentTime;
+     video.onended = () => {audio.pause();
+  };
      
   </script>
+
+<footer>
+  <ul>
+    <li><a href="#">Privacy Policy</a></li>
+    <li><a href="#">Terms of Service</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</footer>
+
 </body>
 </html>
 

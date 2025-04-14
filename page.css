@@ -1,3 +1,7 @@
+ html {
+  scroll-behavior: smooth;
+}
+
 .header {
   height: 50px;
   width: 100%;
@@ -9,8 +13,18 @@
   position: fixed; 
   top: 0;
   left: 0;
-  /* z-index: 1000; */
+  z-index:1000;
+  font-family: 'Poppins';
 }
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
 
 .header ul {
   list-style: none;
@@ -34,18 +48,20 @@
 .buttons{
   display:flex;
   gap:10px;
-  
+  margin-left: 20px;
 }
 
 .buttons button {
   height:30px;
   width : 80px;
- 
+  overflow: hidden;
   border: none;
   background-color:#090909;
   color: white;
   cursor: pointer;
   border-radius: 15px;
+  background-color: #090909;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .buttons button:hover {
@@ -320,7 +336,7 @@ video:hover {
   padding-top:100px;
   align-items: center;
   height: 100vh;
-  background-color: #b7b5b5; 
+  background-color: #fffdfd; 
 }
 
 
@@ -335,13 +351,13 @@ video {
 
 
 video:hover {
-  transform: scale(1.2);
+  transform: scale(1.12);
   box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.5); 
 }
 
 
 video:not([src]) {
-  background: linear-gradient(90deg, #444, #666, #444);
+  background: linear-gradient(90deg, #444, #666, #ffffff);
   background-size: 400% 400%;
   animation: loading 2.4s infinite linear;
 }
@@ -353,4 +369,32 @@ video:not([src]) {
   100% { background-position: 0% 50%; }
 }
 
+footer {
+  background-color: rgb(161, 156, 156);
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  font-family: roboto;
+}
 
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+  color: #ff
+}
